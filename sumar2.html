@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    Número 1:<input type="text" id="num1id"><br>
+    Número 2:<input type="text"id="num2id"><br>
+    <input type="button" value="Sumar" onclick="sumar()">
+    <input type="button" value="Restar" onclick="restar()">
+    <input type="button" value="Multiplicar" onclick="multiplicar()">
+    <input type="button" value="Dividir" onclick="dividir()">
+
+<script>
+    function sumar(){
+        var num1S=document.getElementById("num1Sid").value;
+        var num2S=document.getElementById("num2Sid").value;
+        var resultado= parseInt(num1) + parseInt(num2);
+        alert("El resultado es..."+ resultado);
+
+        function restar(){
+        var numR1=document.getElementById("numR1id").value;
+        var numR2=document.getElementById("numR2id").value;
+        var resultado= parseInt(num1) - parseInt(num2);
+        alert("El resultado es..."+ resultado);
+        }
+        function multiplicar(){
+        var numM1=document.getElementById("numM1id").value;
+        var numM2=document.getElementById("numM2id").value;
+        var resultado= parseInt(num1) * parseInt(num2);
+        alert("El resultado es..."+ resultado);
+        }
+
+        function dividir(){
+        var numD1=document.getElementById("numD1id").value;
+        var numD2=document.getElementById("numD2id").value;
+        var resultado= parseInt(num1) / parseInt(num2);
+        alert("El resultado es..."+ resultado);
+
+
+
+    }
+
+</script>
+</body>
+</html>
